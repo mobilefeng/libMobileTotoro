@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "MTPerformanceManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ViewController *rootViewController = [[ViewController alloc] init];
+    NavigaitionController *navController = [[NavigaitionController alloc] initWithRootViewController:rootViewController];
+    self.window.rootViewController = navController;
+    [self.window makeKeyAndVisible];
+    
+    // 启动 MT
+    [[MTPerformanceManager sharedInstance] start];
+    
     return YES;
 }
 

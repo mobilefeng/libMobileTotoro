@@ -13,6 +13,7 @@
 		29AF74991C72EC9500AAC032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29AF74971C72EC9500AAC032 /* Main.storyboard */; };
 		29AF749B1C72EC9500AAC032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29AF749A1C72EC9500AAC032 /* Assets.xcassets */; };
 		29AF749E1C72EC9500AAC032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29AF749C1C72EC9500AAC032 /* LaunchScreen.storyboard */; };
+		29AF74E71C72FA3900AAC032 /* libMobileTotoroSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AF74E61C72FA3900AAC032 /* libMobileTotoroSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,11 @@
 		29AF749A1C72EC9500AAC032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29AF749D1C72EC9500AAC032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29AF749F1C72EC9500AAC032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29AF74E21C72FA2E00AAC032 /* MTLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTLogoView.h; path = MobileTotoroDemo/libMobileTotoroSDK/include/MTLogoView.h; sourceTree = "<group>"; };
+		29AF74E31C72FA2E00AAC032 /* MTMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTMacro.h; path = MobileTotoroDemo/libMobileTotoroSDK/include/MTMacro.h; sourceTree = "<group>"; };
+		29AF74E41C72FA2E00AAC032 /* MTPerformanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTPerformanceManager.h; path = MobileTotoroDemo/libMobileTotoroSDK/include/MTPerformanceManager.h; sourceTree = "<group>"; };
+		29AF74E51C72FA2E00AAC032 /* MTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTTableViewController.h; path = MobileTotoroDemo/libMobileTotoroSDK/include/MTTableViewController.h; sourceTree = "<group>"; };
+		29AF74E61C72FA3900AAC032 /* libMobileTotoroSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobileTotoroSDK.a; path = MobileTotoroDemo/libMobileTotoroSDK/libMobileTotoroSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29AF74E71C72FA3900AAC032 /* libMobileTotoroSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,7 @@
 		29AF74821C72EC9500AAC032 = {
 			isa = PBXGroup;
 			children = (
+				29AF74DF1C72F8C600AAC032 /* libMobileTotoroSDK */,
 				29AF748D1C72EC9500AAC032 /* MobileTotoroDemo */,
 				29AF748C1C72EC9500AAC032 /* Products */,
 			);
@@ -77,6 +85,26 @@
 				29AF748F1C72EC9500AAC032 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29AF74DF1C72F8C600AAC032 /* libMobileTotoroSDK */ = {
+			isa = PBXGroup;
+			children = (
+				29AF74E61C72FA3900AAC032 /* libMobileTotoroSDK.a */,
+				29AF74E11C72F91300AAC032 /* include */,
+			);
+			name = libMobileTotoroSDK;
+			sourceTree = "<group>";
+		};
+		29AF74E11C72F91300AAC032 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				29AF74E21C72FA2E00AAC032 /* MTLogoView.h */,
+				29AF74E31C72FA2E00AAC032 /* MTMacro.h */,
+				29AF74E41C72FA2E00AAC032 /* MTPerformanceManager.h */,
+				29AF74E51C72FA2E00AAC032 /* MTTableViewController.h */,
+			);
+			name = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +222,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yang Xu (8JG97H3BQR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yang Xu (8JG97H3BQR)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -237,7 +266,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yang Xu (8JG97H3BQR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yang Xu (8JG97H3BQR)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -263,7 +293,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MobileTotoroDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xuyang.MobileTotoroDemo;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobileTotoroDemo/libMobileTotoroSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.MobileTotoroDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -274,7 +308,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MobileTotoroDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xuyang.MobileTotoroDemo;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobileTotoroDemo/libMobileTotoroSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.MobileTotoroDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -298,6 +336,7 @@
 				29AF74A41C72EC9500AAC032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

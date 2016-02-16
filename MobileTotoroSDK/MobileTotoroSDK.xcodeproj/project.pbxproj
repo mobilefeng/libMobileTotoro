@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29AF74B31C72EDCF00AAC032 /* MobileTotoroSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 29AF74B21C72EDCF00AAC032 /* MobileTotoroSDK.h */; };
-		29AF74B51C72EDCF00AAC032 /* MobileTotoroSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF74B41C72EDCF00AAC032 /* MobileTotoroSDK.m */; };
+		29AF74D11C72F3A400AAC032 /* MTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF74BD1C72F3A400AAC032 /* MTTableViewController.m */; };
+		29AF74D21C72F3A400AAC032 /* MTPerformanceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF74C01C72F3A400AAC032 /* MTPerformanceManager.m */; };
+		29AF74D31C72F3A400AAC032 /* MTPerformanceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF74C21C72F3A400AAC032 /* MTPerformanceModel.m */; };
+		29AF74D41C72F3A400AAC032 /* MTChartDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF74C61C72F3A400AAC032 /* MTChartDrawView.m */; };
+		29AF74D51C72F3A400AAC032 /* MTChartOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF74C81C72F3A400AAC032 /* MTChartOverView.m */; };
+		29AF74D61C72F3A400AAC032 /* MTChartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF74CA1C72F3A400AAC032 /* MTChartTableViewCell.m */; };
+		29AF74D71C72F3A400AAC032 /* MTLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF74CC1C72F3A400AAC032 /* MTLogoView.m */; };
+		29AF74D81C72F3A400AAC032 /* MTSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF74CE1C72F3A400AAC032 /* MTSummaryTableViewCell.m */; };
+		29AF74D91C72F3A400AAC032 /* MTSummaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF74D01C72F3A400AAC032 /* MTSummaryView.m */; };
+		29AF74DB1C72F50100AAC032 /* MTPerformanceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AF74BF1C72F3A400AAC032 /* MTPerformanceManager.h */; };
+		29AF74DC1C72F51500AAC032 /* MTTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AF74BC1C72F3A400AAC032 /* MTTableViewController.h */; };
+		29AF74DD1C72F51E00AAC032 /* MTMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AF74C31C72F3A400AAC032 /* MTMacro.h */; };
+		29AF74DE1C72F54F00AAC032 /* MTLogoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AF74CB1C72F3A400AAC032 /* MTLogoView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +29,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				29AF74B31C72EDCF00AAC032 /* MobileTotoroSDK.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +36,25 @@
 
 /* Begin PBXFileReference section */
 		29AF74AF1C72EDCF00AAC032 /* libMobileTotoroSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMobileTotoroSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		29AF74B21C72EDCF00AAC032 /* MobileTotoroSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileTotoroSDK.h; sourceTree = "<group>"; };
-		29AF74B41C72EDCF00AAC032 /* MobileTotoroSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileTotoroSDK.m; sourceTree = "<group>"; };
+		29AF74BC1C72F3A400AAC032 /* MTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTableViewController.h; sourceTree = "<group>"; };
+		29AF74BD1C72F3A400AAC032 /* MTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTableViewController.m; sourceTree = "<group>"; };
+		29AF74BF1C72F3A400AAC032 /* MTPerformanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPerformanceManager.h; sourceTree = "<group>"; };
+		29AF74C01C72F3A400AAC032 /* MTPerformanceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPerformanceManager.m; sourceTree = "<group>"; };
+		29AF74C11C72F3A400AAC032 /* MTPerformanceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPerformanceModel.h; sourceTree = "<group>"; };
+		29AF74C21C72F3A400AAC032 /* MTPerformanceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPerformanceModel.m; sourceTree = "<group>"; };
+		29AF74C31C72F3A400AAC032 /* MTMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTMacro.h; path = MobileTotoroSDK/MTMacro.h; sourceTree = "<group>"; };
+		29AF74C51C72F3A400AAC032 /* MTChartDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTChartDrawView.h; sourceTree = "<group>"; };
+		29AF74C61C72F3A400AAC032 /* MTChartDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTChartDrawView.m; sourceTree = "<group>"; };
+		29AF74C71C72F3A400AAC032 /* MTChartOverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTChartOverView.h; sourceTree = "<group>"; };
+		29AF74C81C72F3A400AAC032 /* MTChartOverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTChartOverView.m; sourceTree = "<group>"; };
+		29AF74C91C72F3A400AAC032 /* MTChartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTChartTableViewCell.h; sourceTree = "<group>"; };
+		29AF74CA1C72F3A400AAC032 /* MTChartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTChartTableViewCell.m; sourceTree = "<group>"; };
+		29AF74CB1C72F3A400AAC032 /* MTLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLogoView.h; sourceTree = "<group>"; };
+		29AF74CC1C72F3A400AAC032 /* MTLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLogoView.m; sourceTree = "<group>"; };
+		29AF74CD1C72F3A400AAC032 /* MTSummaryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSummaryTableViewCell.h; sourceTree = "<group>"; };
+		29AF74CE1C72F3A400AAC032 /* MTSummaryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSummaryTableViewCell.m; sourceTree = "<group>"; };
+		29AF74CF1C72F3A400AAC032 /* MTSummaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSummaryView.h; sourceTree = "<group>"; };
+		29AF74D01C72F3A400AAC032 /* MTSummaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSummaryView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				29AF74B11C72EDCF00AAC032 /* MobileTotoroSDK */,
+				29AF74C31C72F3A400AAC032 /* MTMacro.h */,
 				29AF74B01C72EDCF00AAC032 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,13 +88,67 @@
 		29AF74B11C72EDCF00AAC032 /* MobileTotoroSDK */ = {
 			isa = PBXGroup;
 			children = (
-				29AF74B21C72EDCF00AAC032 /* MobileTotoroSDK.h */,
-				29AF74B41C72EDCF00AAC032 /* MobileTotoroSDK.m */,
+				29AF74BE1C72F3A400AAC032 /* Model */,
+				29AF74C41C72F3A400AAC032 /* View */,
+				29AF74BB1C72F3A400AAC032 /* Controller */,
 			);
 			path = MobileTotoroSDK;
 			sourceTree = "<group>";
 		};
+		29AF74BB1C72F3A400AAC032 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				29AF74BC1C72F3A400AAC032 /* MTTableViewController.h */,
+				29AF74BD1C72F3A400AAC032 /* MTTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		29AF74BE1C72F3A400AAC032 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29AF74BF1C72F3A400AAC032 /* MTPerformanceManager.h */,
+				29AF74C01C72F3A400AAC032 /* MTPerformanceManager.m */,
+				29AF74C11C72F3A400AAC032 /* MTPerformanceModel.h */,
+				29AF74C21C72F3A400AAC032 /* MTPerformanceModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		29AF74C41C72F3A400AAC032 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29AF74C51C72F3A400AAC032 /* MTChartDrawView.h */,
+				29AF74C61C72F3A400AAC032 /* MTChartDrawView.m */,
+				29AF74C71C72F3A400AAC032 /* MTChartOverView.h */,
+				29AF74C81C72F3A400AAC032 /* MTChartOverView.m */,
+				29AF74C91C72F3A400AAC032 /* MTChartTableViewCell.h */,
+				29AF74CA1C72F3A400AAC032 /* MTChartTableViewCell.m */,
+				29AF74CB1C72F3A400AAC032 /* MTLogoView.h */,
+				29AF74CC1C72F3A400AAC032 /* MTLogoView.m */,
+				29AF74CD1C72F3A400AAC032 /* MTSummaryTableViewCell.h */,
+				29AF74CE1C72F3A400AAC032 /* MTSummaryTableViewCell.m */,
+				29AF74CF1C72F3A400AAC032 /* MTSummaryView.h */,
+				29AF74D01C72F3A400AAC032 /* MTSummaryView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29AF74DA1C72F4BA00AAC032 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29AF74DE1C72F54F00AAC032 /* MTLogoView.h in Headers */,
+				29AF74DC1C72F51500AAC032 /* MTTableViewController.h in Headers */,
+				29AF74DB1C72F50100AAC032 /* MTPerformanceManager.h in Headers */,
+				29AF74DD1C72F51E00AAC032 /* MTMacro.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		29AF74AE1C72EDCF00AAC032 /* MobileTotoroSDK */ = {
@@ -76,6 +158,7 @@
 				29AF74AB1C72EDCF00AAC032 /* Sources */,
 				29AF74AC1C72EDCF00AAC032 /* Frameworks */,
 				29AF74AD1C72EDCF00AAC032 /* CopyFiles */,
+				29AF74DA1C72F4BA00AAC032 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -122,7 +205,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29AF74B51C72EDCF00AAC032 /* MobileTotoroSDK.m in Sources */,
+				29AF74D41C72F3A400AAC032 /* MTChartDrawView.m in Sources */,
+				29AF74D31C72F3A400AAC032 /* MTPerformanceModel.m in Sources */,
+				29AF74D91C72F3A400AAC032 /* MTSummaryView.m in Sources */,
+				29AF74D71C72F3A400AAC032 /* MTLogoView.m in Sources */,
+				29AF74D51C72F3A400AAC032 /* MTChartOverView.m in Sources */,
+				29AF74D11C72F3A400AAC032 /* MTTableViewController.m in Sources */,
+				29AF74D81C72F3A400AAC032 /* MTSummaryTableViewCell.m in Sources */,
+				29AF74D21C72F3A400AAC032 /* MTPerformanceManager.m in Sources */,
+				29AF74D61C72F3A400AAC032 /* MTChartTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +337,7 @@
 				29AF74BA1C72EDCF00AAC032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

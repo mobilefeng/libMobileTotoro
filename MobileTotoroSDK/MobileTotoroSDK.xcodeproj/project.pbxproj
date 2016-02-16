@@ -20,6 +20,8 @@
 		29AF74DC1C72F51500AAC032 /* MTTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AF74BC1C72F3A400AAC032 /* MTTableViewController.h */; };
 		29AF74DD1C72F51E00AAC032 /* MTMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AF74C31C72F3A400AAC032 /* MTMacro.h */; };
 		29AF74DE1C72F54F00AAC032 /* MTLogoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AF74CB1C72F3A400AAC032 /* MTLogoView.h */; };
+		29AF74EF1C731A0200AAC032 /* UIImage+MTImageFromBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AF74ED1C731A0200AAC032 /* UIImage+MTImageFromBundle.h */; };
+		29AF74F01C731A0200AAC032 /* UIImage+MTImageFromBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF74EE1C731A0200AAC032 /* UIImage+MTImageFromBundle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +57,8 @@
 		29AF74CE1C72F3A400AAC032 /* MTSummaryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSummaryTableViewCell.m; sourceTree = "<group>"; };
 		29AF74CF1C72F3A400AAC032 /* MTSummaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSummaryView.h; sourceTree = "<group>"; };
 		29AF74D01C72F3A400AAC032 /* MTSummaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSummaryView.m; sourceTree = "<group>"; };
+		29AF74ED1C731A0200AAC032 /* UIImage+MTImageFromBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+MTImageFromBundle.h"; path = "Category/UIImage+MTImageFromBundle.h"; sourceTree = "<group>"; };
+		29AF74EE1C731A0200AAC032 /* UIImage+MTImageFromBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MTImageFromBundle.m"; path = "Category/UIImage+MTImageFromBundle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		29AF74B11C72EDCF00AAC032 /* MobileTotoroSDK */ = {
 			isa = PBXGroup;
 			children = (
+				29AF74F11C731A0E00AAC032 /* Category */,
 				29AF74BE1C72F3A400AAC032 /* Model */,
 				29AF74C41C72F3A400AAC032 /* View */,
 				29AF74BB1C72F3A400AAC032 /* Controller */,
@@ -134,6 +139,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		29AF74F11C731A0E00AAC032 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				29AF74ED1C731A0200AAC032 /* UIImage+MTImageFromBundle.h */,
+				29AF74EE1C731A0200AAC032 /* UIImage+MTImageFromBundle.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -142,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29AF74DE1C72F54F00AAC032 /* MTLogoView.h in Headers */,
+				29AF74EF1C731A0200AAC032 /* UIImage+MTImageFromBundle.h in Headers */,
 				29AF74DC1C72F51500AAC032 /* MTTableViewController.h in Headers */,
 				29AF74DB1C72F50100AAC032 /* MTPerformanceManager.h in Headers */,
 				29AF74DD1C72F51E00AAC032 /* MTMacro.h in Headers */,
@@ -211,6 +226,7 @@
 				29AF74D71C72F3A400AAC032 /* MTLogoView.m in Sources */,
 				29AF74D51C72F3A400AAC032 /* MTChartOverView.m in Sources */,
 				29AF74D11C72F3A400AAC032 /* MTTableViewController.m in Sources */,
+				29AF74F01C731A0200AAC032 /* UIImage+MTImageFromBundle.m in Sources */,
 				29AF74D81C72F3A400AAC032 /* MTSummaryTableViewCell.m in Sources */,
 				29AF74D21C72F3A400AAC032 /* MTPerformanceManager.m in Sources */,
 				29AF74D61C72F3A400AAC032 /* MTChartTableViewCell.m in Sources */,
@@ -259,6 +275,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -295,6 +312,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -303,7 +321,7 @@
 		29AF74B91C72EDCF00AAC032 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -312,7 +330,7 @@
 		29AF74BA1C72EDCF00AAC032 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

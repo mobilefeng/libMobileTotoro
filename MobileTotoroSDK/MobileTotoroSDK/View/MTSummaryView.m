@@ -7,6 +7,7 @@
 //
 
 #import "MTSummaryView.h"
+#import "UIImage+MTImageFromBundle.h"
 
 static const double kMTSummaryValueMax = 200.0;
 
@@ -35,9 +36,11 @@ static const double kMTSummaryValueMax = 200.0;
             _dialImageView = [[UIImageView alloc] initWithFrame:dialRect];
             
             if (type == eMTViewTypeCPU) {
-                _dialImageView.image = [UIImage imageNamed:@"dialCPU"];
+//                _dialImageView.image = [UIImage imageNamed:@"dialCPU"];
+                _dialImageView.image = [UIImage imageNamedFromBundle:@"dialCPU"];
             } else if (type == eMTViewTypeMEM) {
-                _dialImageView.image = [UIImage imageNamed:@"dialMEM"];
+//                _dialImageView.image = [UIImage imageNamed:@"dialMEM"];
+                _dialImageView.image = [UIImage imageNamedFromBundle:@"dialMEM"];
             }
             
             [self addSubview:_dialImageView];
@@ -47,7 +50,8 @@ static const double kMTSummaryValueMax = 200.0;
             CGRect pointerRect = CGRectMake(11, 75, 140, 8);
             _pointerImageView = [[UIImageView alloc] initWithFrame:pointerRect];
             
-            _pointerImageView.image = [UIImage imageNamed:@"pointer"];
+//            _pointerImageView.image = [UIImage imageNamed:@"pointer"];
+            _pointerImageView.image = [UIImage imageNamedFromBundle:@"pointer"];
             
             [self addSubview:_pointerImageView];
         }

@@ -10,12 +10,9 @@
 
 @interface ViewController : UIViewController
 
-
 @end
 
 
 @interface NavigaitionController : UINavigationController
-
-
 
 @end

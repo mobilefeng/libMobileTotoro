@@ -14,6 +14,7 @@
 		29AF749B1C72EC9500AAC032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29AF749A1C72EC9500AAC032 /* Assets.xcassets */; };
 		29AF749E1C72EC9500AAC032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29AF749C1C72EC9500AAC032 /* LaunchScreen.storyboard */; };
 		29AF74E71C72FA3900AAC032 /* libMobileTotoroSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AF74E61C72FA3900AAC032 /* libMobileTotoroSDK.a */; };
+		29AF74F31C731FEA00AAC032 /* MobileTotoro.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29AF74F21C731FEA00AAC032 /* MobileTotoro.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		29AF74E41C72FA2E00AAC032 /* MTPerformanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTPerformanceManager.h; path = MobileTotoroDemo/libMobileTotoroSDK/include/MTPerformanceManager.h; sourceTree = "<group>"; };
 		29AF74E51C72FA2E00AAC032 /* MTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTTableViewController.h; path = MobileTotoroDemo/libMobileTotoroSDK/include/MTTableViewController.h; sourceTree = "<group>"; };
 		29AF74E61C72FA3900AAC032 /* libMobileTotoroSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobileTotoroSDK.a; path = MobileTotoroDemo/libMobileTotoroSDK/libMobileTotoroSDK.a; sourceTree = "<group>"; };
+		29AF74F21C731FEA00AAC032 /* MobileTotoro.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MobileTotoro.bundle; path = MobileTotoroDemo/libMobileTotoroSDK/MobileTotoro.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				29AF74E61C72FA3900AAC032 /* libMobileTotoroSDK.a */,
+				29AF74F21C731FEA00AAC032 /* MobileTotoro.bundle */,
 				29AF74E11C72F91300AAC032 /* include */,
 			);
 			name = libMobileTotoroSDK;
@@ -166,6 +169,7 @@
 			files = (
 				29AF749E1C72EC9500AAC032 /* LaunchScreen.storyboard in Resources */,
 				29AF749B1C72EC9500AAC032 /* Assets.xcassets in Resources */,
+				29AF74F31C731FEA00AAC032 /* MobileTotoro.bundle in Resources */,
 				29AF74991C72EC9500AAC032 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +249,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -282,6 +287,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

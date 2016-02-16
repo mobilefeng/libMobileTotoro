@@ -10,6 +10,8 @@
 
 #import "MTMacro.h"
 
+#import "UIImage+MTImageFromBundle.h"
+
 #define kMTSuperViewFrameWidth      ([self superview].frame.size.width)
 #define kMTSuperViewFrameHeight     ([self superview].frame.size.height)
 #define kMTViewFrameWidth           (self.frame.size.width)
@@ -63,7 +65,8 @@
 - (UIImageView *)logoView {
     if (!_logoView) {
         _logoView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kMTLogoSize, kMTLogoSize)];
-        [_logoView setImage:[UIImage imageNamed:@"logoImage"]];
+//        [_logoView setImage:[UIImage imageNamed:@"logoImage"]];
+        [_logoView setImage:[UIImage imageNamedFromBundle:@"logoImage"]];
     }
     return _logoView;
 }
